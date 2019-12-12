@@ -1,0 +1,303 @@
+* {
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+  overflow: scroll;
+}
+[class*="col-"]{
+  float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*scrollbar section start*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*scrollbar section end*/
+
+/* background section start*/
+.bg-grey1
+{
+  background-color: #d7d7d7;
+}
+.bg-blue
+{
+    background-color: #48b2c5;
+}
+.bg-green
+{
+  background-color: #0adb90;
+}
+.bg-white1
+{
+  background-color: #f4f4f4;
+}
+.bg-white2
+{
+  background-color: #f6f6f6;
+}
+/*background section end*/
+
+/*Topnav section Start*/
+.topnav
+{
+  overflow: hidden;
+  border: none;
+  height: 50px;
+  background-color: #f6f6f6;
+}
+.topnav .nama
+{
+  float: right;
+  display: block;
+  color: black;
+  padding: 17px 16px;
+}
+.topnav .title
+{
+  float: left;
+  font-family: sans-serif;
+  display: block;
+  color: black;
+  padding: 17px 16px;
+}
+span[class="nama-id"]
+{
+  font-size: 16px;
+}
+/*Topnav section end*/
+
+/*Side menu section start*/
+.side-dt
+{
+  height: 700px;
+  width: 100%;
+  padding-top: 10px;
+}
+.animate-side
+{
+  -moz-transform: translatex(-250px);
+  -webkit-transform: translatex(-250px);
+  /* width: 2.5%; */
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.animate-col
+{
+  width: 2.5%;
+  -moz-transition: all 0.3s 0.3s ease-in;
+  -webkit-transition: all 0.3s 0.3s ease-in;
+  -ms-transition: all 0.3s 0.3s ease-in;
+  transition: all 0.3s 0.3s ease-in;
+}
+.side-dt .btn-off
+{
+  float: right;
+  display: block;
+  height: 35px;
+}
+.btn-off i
+{
+  font-size: 20px;
+}
+.side-dt .pre-prof
+{
+  display: block;
+  padding-top: 10px;
+  height: 250px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.pre-prof .photo
+{
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.pre-prof .photo:hover
+{
+  z-index: 1;
+  cursor: pointer;
+  background-color: #48b2c5;
+}
+.pre-prof .dd-nama
+{
+  margin: auto;
+  color: white;
+}
+.dd-nama i
+{
+  border-bottom: solid 0.5px white;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 16px;
+}
+.dd-nama i:hover
+{
+  cursor: pointer;
+  background-color: #06c6e1;
+}
+.side-dt .menu
+{
+  display: block;
+}
+.menu i
+{
+  border-top: solid 0.5px white;
+  font-size: 16px;
+}
+.menu i:hover
+{
+  cursor: pointer;
+  background-color: #06c6e1;
+}
+.side-dt i
+{
+  display: block;
+  padding: 10px 10px;
+  color: white;
+}
+.side-dt i:hover
+{
+  cursor: pointer;
+  background-color: #06c6e1;
+}
+span[class="ls-menu"]
+{
+  float: right;
+  padding-left: 10px;
+  color: white;
+  font-size: 16px;
+}
+/*Side menu section end*/
+
+/*tomboll start*/
+.tombol
+{
+  padding: 14px 16px;
+  margin: 5px 3px;
+  transition: border-radius .25s ease;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+.tombol:hover
+{
+  cursor: pointer;
+  border-radius: 15px;
+}
+.tbl-cancel
+{
+  background-color: #ff4861;
+  color: white;
+}
+.tbl-cancel:hover
+{
+  cursor: pointer;
+  border-radius: 15px;
+}
+.tbl-ok
+{
+  background-color: #5ed350;
+  color: white;
+}
+.tbl-ok:hover
+{
+  cursor: pointer;
+  border-radius: 15px;
+}
+.tbl-default
+{
+  background-color: #48b2c5;
+  color: white;
+}
+.tbl-default:hover
+{
+  cursor: pointer;
+  border-radius: 15px;
+}
+/*tomboll end*/
+
+/*transaksi start*/
+.manager
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  height: 700px;
+}
+.manager h1
+{
+  font-family: sans-serif;
+  border: none;
+  margin-bottom: 25px;
+}
+.manager .path
+{
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #000;
+}
+.manager .body
+{
+  display: block;
+  padding-top: 10px;
+}
+/*transaksi end*/
+
+/*media change section start*/
+@media only screen and (max-width:600px)
+{
+  .col-2
+  {
+    width: 10%;
+  }
+  .side-dt .pre-prof
+  {
+    display: none;
+  }
+  .side-dt .menu
+  {
+    display: none;
+  }
+}
+
+/*media change section end*/
